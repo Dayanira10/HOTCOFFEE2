@@ -1,0 +1,89 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOT COFFEE</title>
+
+  <!-- Estructura de hojas de estilo ordenada -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Fuente Montserrat -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <ul class="nav__list">
+        <li><a href="#inicio" class="nav__item">Inicio</a></li>
+        <li><a href="#catalogo" class="nav__item">Catálogo</a></li>
+        <li><a href="#contacto" class="nav__item">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de bienvenida -->
+    <section id="inicio" class="inicio">
+    <div class="inicio__contenido container">
+    <img src="COFFEEE.png" alt="Logo de HOT COFFEE" class="inicio__logo" />
+    <h1 class="inicio__titulo">HOT COFFEE</h1>
+    <p class="inicio__descripcion">
+      Café de especialidad, tostado en pequeños lotes para quienes buscan sabor auténtico.
+    </p>
+  </div>
+</section>
+
+ 
+    <!-- Catálogo de productos -->
+    <section id="catalogo" class="catalogo">
+      <div class="container">
+        <h2 class="catalogo__titulo">Catálogo</h2>
+        <div class="catalogo__grid">
+          <!-- Producto 1 -->
+          <figure class="producto">
+            <img src="Brown Illustration Coffee Menu.jpg" alt="Café Peruano" class="producto__imagen" />
+            <img src="frapu.jpg" alt="frapuchino" class="producto__imagen" />
+            <figcaption class="producto__nombre">Café Peruano</figcaption>
+          </figure>
+          <!-- Más productos se pueden añadir aquí -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="contacto" class="contacto">
+      <div class="container">
+        <h2 class="contacto__titulo">Contáctanos</h2>
+        <form class="contacto__form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" name="correo" required />
+
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+
+          <button type="submit" class="contacto__boton">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__texto">
+      &copy; HOT COFFEE. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+</body>
+</html>
