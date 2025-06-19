@@ -1,0 +1,33 @@
+:root {
+  /* Colores */
+  --color-principal: #5c3a21; /* Marrón oscuro para fondo o textos principales */
+  --color-secundario: #f7f3ef; /* Fondo claro o secciones */
+  --color-acento: #c69c6d; /* Botones, enlaces destacados */
+  --color-texto: #333; /* Texto general */
+
+  /* Tipografía */
+  --fuente-principal: 'Montserrat', sans-serif;
+  --fuente-secundaria: 'Roboto', sans-serif;
+
+  /* Espaciado */
+  --espaciado-xs: 4px;
+  --espaciado-sm: 8px;
+  --espaciado: 16px;
+  --espaciado-md: 24px;
+  --espaciado-lg: 32px;
+  --espaciado-xl: 48px;
+
+  /* Estilos de borde y sombra */
+  --radio-borde: 8px;
+  --sombra: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  /* Transiciones */
+  --transicion-rapida: 0.2s ease-in-out;
+  --transicion-media: 0.4s ease-in-out;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-secundario);
+  color: var(--color-texto);
+}

@@ -1,0 +1,80 @@
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplicación de animación al inicio */
+.inicio__contenido {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--espaciado);
+}
+
+.inicio__titulo {
+  font-size: 3rem;
+  margin-bottom: var(--espaciado-sm);
+  color: rgb(99, 60, 60);
+}
+
+.inicio__descripcion {
+  font-size: 1.25rem;
+  color: rgb(78, 49, 49);
+}
+
+.inicio__logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto var(--espaciado);
+  display: block;
+}
+
+/* Formularios */
+.contacto__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--espaciado-sm);
+}
+
+.contacto__form input,
+.contacto__form textarea {
+  padding: var(--espaciado-sm);
+  border: 1px solid #ccc;
+  border-radius: var(--radio-borde);
+  background-color: #fff;
+}
+
+.contacto__form label {
+  font-weight: 600;
+  color: var(--color-principal);
+}
+
+/* Responsive básico */
+@media (max-width: 768px) {
+  .nav__list {
+    flex-direction: column;
+    gap: var(--espaciado-sm);
+  }
+
+  .inicio__titulo {
+    font-size: 2.25rem;
+  }
+
+  .catalogo__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.inicio__logo {
+  width: 120px;
+  height: auto;
+  margin: 0 auto var(--espaciado);
+  display: block;
+}
